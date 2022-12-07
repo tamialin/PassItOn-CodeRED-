@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassItOn</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c7b58b2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="home.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="posting.html">POST</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+<div class="text-box">
+    <h1>The Largest Network In The Nonprofit World</h1>
+    <p>Pass transforms volunteer oppertunities, making it quick, easy and effective.</p>
+    <a href="signup.html" class="hero-btn">Sign Up</a>
+    <a href="login.html" class="hero-btn">Log In</a>
+</div>
+</section>
+
+<!-------JavaScript for Toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+
+</html>

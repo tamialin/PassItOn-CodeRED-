@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PassItOn/profile</title>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/73c7b58b2f.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <nav>
+        <a href="home.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="posting.html">POST</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+    <div>
+        <div class="container">
+            <img src="images/user.jpg" class="userImage">
+            <h1>User</h1>
+        </div>
+        <div class="upcoming">
+            <h1>Upcoming Events:</h1>
+        </div> 
+        <div class="events">
+            <div class="event">
+                <h1 class="event-header">Event 1</h1>
+                <p class="event-text">description</p>
+                <a href="" style="text-decoration:none;">
+                <button class="btn">
+                    Visit <span>&rarr;</span>
+                </button>
+                </a>
+            </div>
+            <div class="event">
+                <h1 class="event-header">Event 2</h1>
+                <p class="event-text">description</p>
+                <a href="" style="text-decoration:none;">
+                <button class="btn">
+                    Visit <span>&rarr;</span>
+                </button>
+                </a>
+            </div>
+            <div class="event">
+                <h1 class="event-header">Event 3</h1>
+                <p class="event-text">description</p>
+                <a href="" style="text-decoration:none;">
+                <button class="btn">
+                    Visit <span>&rarr;</span>
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+<!-------JavaScript for Toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

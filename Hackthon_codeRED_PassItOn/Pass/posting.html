@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassItOn/posting</title>
+    <link rel="stylesheet" href="styles/posting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c7b58b2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="posting.html">POST</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+    <div class="header">
+        <h1>Make a Post</h1>
+        <div class="txtb">
+            <label>Title:</label>
+            <input type="text" name="Title" placeholder="The title of the event" required>  
+        </div>
+        <div class="txtb">
+            <label>Location:</label>
+            <input type="text" name="Location" placeholder="Location" required>
+        </div>
+        <div class="txtb">
+            <form>
+                <label>Date/Time:</label>
+                <input type="datetime-local"/><br>
+            </form>
+        </div>
+        <div class="txtb">
+            <label>Event Description:</label>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>  
+        </div>
+        <div class="txtb">
+            <form>
+                <label>Application Deadline:</label>
+                <input type="datetime-local"/><br>
+            </form>
+        </div>
+        <div class="txtb">
+            <label>Contact Info:</label>
+            <div class="email">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="website">
+                <input type="url" name="website" placeholder="Your company's website" required>
+            </div>
+        </div>
+        <a class="button">POST</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassItOn/board</title>
+    <link rel="stylesheet" href="styles/board.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c7b58b2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="sub-header-big">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="board.html">BOARD</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i> 
+    </nav>
+    <!-- <div class="search-col">
+        <input type="text" name="search" placeholder="Search for Volunteer" required>
+    </div> -->
+    <div class="publish">
+        <a href="posting.html"><button class="hero-btn-2">Publish Event</button></a>
+        <p>Your regestered volunteer events will be quickly reviewed</p>
+    </div>
+</section>
+
+<!------Events------>
+<section class="events">
+    <h1>Volunteering Events That Can Be Applied For</h1>
+    <p>Total: </p>
+    <div class="post">
+        <button type="submit" class="hero-btn-4">Apply</button>
+        <div>
+            <a href="">Event name</a>
+            <p>event introduction</p>
+        </div>
+    </div>
+    <div class="post">
+        <button type="submit" class="hero-btn-4">Apply</button>
+        <div>
+            <a href="">Event name</a>
+            <p>event introduction</p>
+        </div>
+    </div>
+</section>
+
+<!-------JavaScript for Toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
